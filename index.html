@@ -1,0 +1,923 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Landing page institucional do DevClub, escola de tecnologia com formações práticas em programação.">
+    <meta name="theme-color" content="#07080a">
+    <link rel="icon" type="image/png" href="assets/logos/devclub-symbol.png">
+    <title>DevClub — Escola de tecnologia</title>
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/differentiators-carousel.js" defer></script>
+    <script src="js/section-background.js" defer></script>
+    <script src="js/testimonials-section.js" defer></script>
+    <script src="js/instructors-carousel.js" defer></script>
+    <script src="js/results-carousel.js" defer></script>
+    <script src="js/hero-effects.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <div class="custom-cursor" aria-hidden="true" data-custom-cursor>
+      <svg viewBox="0 0 24 24" focusable="false">
+        <path d="M3.2 2.8 19 11.2c.8.4.65 1.6-.23 1.82l-5.85 1.43-2.73 5.45c-.4.8-1.57.61-1.72-.27L2.02 4.1c-.27-.96.3-1.75 1.18-1.3Z"></path>
+      </svg>
+    </div>
+
+    <header class="site-header" data-header>
+      <div class="container site-header__inner">
+        <a class="brand" href="#topo" aria-label="DevClub — voltar ao início">
+          <img class="brand__mark" src="assets/logos/devclub-symbol.png" alt="" width="62" height="62">
+          <span class="brand__name">DevClub</span>
+          <span class="brand__status">escola de tecnologia</span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-toggle>
+          <span class="sr-only">Abrir menu</span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </button>
+
+        <nav class="site-nav" id="menu-principal" aria-label="Navegação principal" data-menu>
+          <ul class="site-nav__list">
+            <li><a href="#quem-somos">DevClub</a></li>
+            <li><a href="#formacoes">Formações</a></li>
+            <li><a href="#depoimentos">Depoimentos</a></li>
+            <li><a href="#feras-dev">Instrutores</a></li>
+          </ul>
+          <a class="button button--small" href="#formacoes">Ver formações</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="topo" aria-labelledby="hero-title" data-hero>
+        <div class="hero__scene" aria-hidden="true">
+          <canvas class="hero__canvas hero__canvas--back" aria-hidden="true" data-particles-back></canvas>
+
+          <div class="hero-symbol" data-hero-symbol>
+            <div class="hero-cube" data-hero-cube>
+              <span class="hero-cube__face hero-cube__face--front"><img src="assets/logos/devclub-symbol.png" alt="" width="62" height="62"></span>
+              <span class="hero-cube__face hero-cube__face--back"><img src="assets/logos/devclub-symbol.png" alt="" width="62" height="62"></span>
+              <span class="hero-cube__face hero-cube__face--right"><img src="assets/logos/devclub-symbol.png" alt="" width="62" height="62"></span>
+              <span class="hero-cube__face hero-cube__face--left"><img src="assets/logos/devclub-symbol.png" alt="" width="62" height="62"></span>
+              <span class="hero-cube__face hero-cube__face--top"><img src="assets/logos/devclub-symbol.png" alt="" width="62" height="62"></span>
+              <span class="hero-cube__face hero-cube__face--bottom"><img src="assets/logos/devclub-symbol.png" alt="" width="62" height="62"></span>
+            </div>
+          </div>
+
+          <canvas class="hero__canvas hero__canvas--front" aria-hidden="true" data-particles-front></canvas>
+          <div class="hero__spotlight"></div>
+        </div>
+
+        <p class="hero__tagline">A escola das profissões do futuro</p>
+
+        <div class="container hero__layout">
+          <div class="hero__content">
+            <h1 id="hero-title">
+              <span class="hero-title__line">O código certo para</span>
+              <span class="hero-title__line">iluminar a sua <em>carreira!</em></span>
+            </h1>
+            <p class="hero__lead">Aprenda programação do zero ao nível profissional com metodologia prática, projetos e preparação para o mercado de tecnologia.</p>
+            <div class="hero__actions">
+              <a class="button button--orbit" href="#quem-somos" data-orbit-button>
+                <span class="button__orbit" aria-hidden="true" data-orbit-line></span>
+                <span class="button__orbit" aria-hidden="true" data-orbit-line></span>
+                <span class="button__collision-flash" aria-hidden="true" data-orbit-flash></span>
+                <span class="button__label">Conhecer o DevClub</span>
+              </a>
+              <a class="text-link" href="#formacoes">Ver formações <span aria-hidden="true">↘</span></a>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <div class="future-sections" aria-label="Estrutura planejada da landing page">
+        <div class="animated-sections">
+        <div class="about-division" data-about-division data-section-background-host>
+          <canvas class="about-division__canvas section-background__canvas" aria-hidden="true" data-section-background></canvas>
+
+          <section class="about-section" id="quem-somos" aria-labelledby="quem-somos-title" data-entry-reveal="about">
+            <div class="container about-section__inner">
+              <div class="about-section__heading">
+                <h2 id="quem-somos-title">
+                  <span>Não é uma escola para assistir.</span>
+                  <span>É um clube para construir.</span>
+                </h2>
+              </div>
+
+              <div class="about-section__details">
+                <div class="about-section__copy">
+                  <p class="about-section__lead">O DevClub transforma curiosidade em código, código em projetos e projetos em oportunidades.</p>
+                  <p>Você não precisa entender de programação para começar. No DevClub, o aprendizado acontece passo a passo, com prática em projetos e apoio da comunidade, até que você consiga criar suas próprias soluções e se preparar para o mercado de tecnologia.</p>
+                </div>
+
+                <dl class="about-indicators" aria-label="Missão, propósito e comunidade do DevClub">
+                  <div class="about-indicators__item">
+                    <dt>Missão</dt>
+                    <dd>Trazer a oportunidade real de transformação de vida através da programação, mesmo para quem nunca escreveu uma linha de código.</dd>
+                  </div>
+                  <div class="about-indicators__item">
+                    <dt>Propósito</dt>
+                    <dd>Tornar a tecnologia uma ferramenta de transformação profissional, mostrando que programação pode ser aprendida com prática, direção e consistência.</dd>
+                  </div>
+                  <div class="about-indicators__item">
+                    <dt>Comunidade</dt>
+                    <dd>Pessoas conectadas por uma mesma decisão: deixar de apenas consumir tecnologia e começar a construí-la.</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <p class="about-section__closing">
+                <span>Aqui, ninguém evolui sozinho.</span>
+                <strong>Isso é Sangue Verde.</strong>
+              </p>
+            </div>
+          </section>
+
+          <section class="differentials" id="diferenciais" aria-labelledby="differentials-title" data-carousel data-entry-reveal="differentials">
+            <div class="container differentials__inner">
+              <header class="differentials__header">
+                <div>
+                  <p class="section-index">Diferenciais em movimento</p>
+                  <h2 id="differentials-title">O jeito Club de ser Dev.</h2>
+                  <p class="differentials__source-note">Visão editorial do desafio. A disponibilidade dos recursos deve ser confirmada antes da publicação.</p>
+                </div>
+
+              </header>
+
+              <div class="differentials-carousel" role="region" aria-roledescription="carrossel" aria-label="Diferenciais do DevClub">
+                <div class="carousel-controls" role="group" aria-label="Controles do carrossel">
+                  <button class="carousel-control carousel-control--previous" type="button" aria-label="Ver diferencial anterior" data-carousel-prev>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"></path></svg>
+                  </button>
+                  <button class="carousel-control carousel-control--next" type="button" aria-label="Ver próximo diferencial" data-carousel-next>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"></path></svg>
+                  </button>
+                </div>
+
+                <div class="differentials-carousel__viewport" tabindex="0" data-carousel-viewport>
+                  <ul class="differentials-carousel__track" data-carousel-track>
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="1 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="30" rx="5"></rect><path d="m18 20-5 4 5 4M24 18h11M24 24h8M24 30h6"></path></svg>
+                        </div>
+                        <p class="differential-card__number">01</p>
+                        <h3>Aulas que viram projeto</h3>
+                        <p>Conteúdo direto ao ponto para você aprender enquanto constrói aplicações e enfrenta problemas reais.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="2 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><rect x="6" y="9" width="36" height="30" rx="5"></rect><path d="M27 15 17 27h8l-3 8 10-13h-8l3-7Z"></path></svg>
+                        </div>
+                        <p class="differential-card__number">02</p>
+                        <h3>Aprenda! Teste! Entenda!</h3>
+                        <p>Ambientes interativos para experimentar código, receber feedback e transformar teoria em domínio técnico.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="3 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><path d="M6 16h14l4-5h18v25a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4V16Z"></path><path d="m21 24-5 4 5 4M28 24l5 4-5 4"></path></svg>
+                        </div>
+                        <p class="differential-card__number">03</p>
+                        <h3>Projetos que viram portfólio</h3>
+                        <p>Projetos para praticar, demonstrar evolução e apresentar suas habilidades a recrutadores.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="4 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><circle cx="24" cy="12" r="5"></circle><circle cx="11" cy="32" r="5"></circle><circle cx="37" cy="32" r="5"></circle><path d="m21 16-7 11M27 16l7 11M16 32h16"></path></svg>
+                        </div>
+                        <p class="differential-card__number">04</p>
+                        <h3>Uma comunidade na mesma jornada</h3>
+                        <p>Compartilhe dúvidas, projetos e conquistas com pessoas que também decidiram mudar de carreira através da tecnologia.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="5 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><path d="M9 27v-5a15 15 0 0 1 30 0v5"></path><path d="M9 25h6v11H9a3 3 0 0 1-3-3v-5a3 3 0 0 1 3-3ZM39 25h-6v11h6a3 3 0 0 0 3-3v-5a3 3 0 0 0-3-3ZM33 36c-2 4-5 5-10 5"></path></svg>
+                        </div>
+                        <p class="differential-card__number">05</p>
+                        <h3>Você não fica travado sozinho</h3>
+                        <p>Suporte humano para ajudar você a continuar avançando quando surgirem dúvidas.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="6 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><path d="M20 11a7 7 0 0 0-7 7v2a7 7 0 0 0-3 13 7 7 0 0 0 10 5M20 11a7 7 0 0 1 7 7v20a7 7 0 0 1-7 0V11Z"></path><path d="M30 12h5M34 8v8M31 22l8 3-6 4 2 7"></path></svg>
+                        </div>
+                        <p class="differential-card__number">06</p>
+                        <h3>Recarga para seguir avançando</h3>
+                        <p>Uma recarga para organizar a mente, vencer bloqueios, tirar dúvidas e recuperar a direção da jornada.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="7 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><rect x="9" y="13" width="30" height="25" rx="6"></rect><path d="M24 7v6M18 24h.1M30 24h.1M17 31h14M5 22h4M39 22h4"></path></svg>
+                        </div>
+                        <p class="differential-card__number">07</p>
+                        <h3>IA que conhece sua jornada</h3>
+                        <p>Recursos de IA e apoio especializado para orientar estudos, projetos e dúvidas em diferentes tecnologias.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="8 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><path d="M29 8c7 1 11 5 12 12l-12 12-10-10L29 8Z"></path><path d="m19 22-8 3-4 8 10-1M29 32l-3 8-8 3 1-11M31 17h.1M15 36l-6 6"></path></svg>
+                        </div>
+                        <p class="differential-card__number">08</p>
+                        <h3>Código é só parte da carreira</h3>
+                        <p>Orientação para portfólio, LinkedIn, currículo, entrevistas e posicionamento profissional.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="9 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><rect x="7" y="12" width="34" height="26" rx="5"></rect><path d="M7 19h34M30 27h11M19 24l-5 4 5 4M25 24l5 4-5 4"></path></svg>
+                        </div>
+                        <p class="differential-card__number">09</p>
+                        <h3>Transforme conhecimento em oportunidade</h3>
+                        <p>Aprenda a oferecer projetos e serviços de programação e IA, criando caminhos para conquistar seus primeiros freelas enquanto continua evoluindo.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="10 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><rect x="7" y="10" width="34" height="31" rx="5"></rect><path d="M15 6v8M33 6v8M7 19h34M27 22l-8 10h7l-3 7 10-12h-7l1-5Z"></path></svg>
+                        </div>
+                        <p class="differential-card__number">10</p>
+                        <h3>Sempre existe um próximo desafio</h3>
+                        <p>Aulas ao vivo, intensivões, projetos coletivos e eventos para manter o aluno em movimento.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="11 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><path d="M24 14c-4-4-9-6-16-5v28c7-1 12 1 16 5M24 14c4-4 9-6 16-5v28c-7-1-12 1-16 5V14Z"></path><path d="M13 17c4 0 7 1 9 3M35 17c-4 0-7 1-9 3"></path></svg>
+                        </div>
+                        <p class="differential-card__number">11</p>
+                        <h3>Conhecimento para consultar</h3>
+                        <p>Materiais de apoio, e-books e conteúdos atualizados para revisar conceitos e acompanhar as tecnologias do mercado.</p>
+                      </article>
+                    </li>
+
+                    <li class="differentials-carousel__item" role="group" aria-roledescription="slide" aria-label="12 de 12" data-carousel-item>
+                      <article class="differential-card">
+                        <div class="differential-card__icon" aria-hidden="true">
+                          <svg viewBox="0 0 48 48"><rect x="13" y="5" width="22" height="38" rx="5"></rect><path d="M20 10h8M21 37h6"></path><circle cx="24" cy="24" r="7"></circle><path d="m22 20 6 4-6 4v-8Z"></path></svg>
+                        </div>
+                        <p class="differential-card__number">12</p>
+                        <h3>Seu próximo passo cabe no bolso</h3>
+                        <p>Organize seus estudos para continuar aprendendo onde estiver, no ritmo que couber na sua rotina.</p>
+                      </article>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <footer class="differentials__footer">
+                <p class="carousel-status" aria-live="polite" aria-atomic="true" data-carousel-status>01 / 12</p>
+                <div class="carousel-progress" aria-hidden="true"><span data-carousel-progress></span></div>
+              </footer>
+            </div>
+          </section>
+        </div>
+
+        <section class="learning-path" id="formacoes" aria-labelledby="formacoes-title" data-learning-path data-section-background-host>
+          <canvas class="learning-path__canvas section-background__canvas" aria-hidden="true" data-section-background></canvas>
+
+          <div class="container learning-path__inner">
+            <header class="learning-path__header">
+              <p class="section-index">Do 0 ao céu</p>
+              <h2 id="formacoes-title">Sua carreira aqui no DevClub</h2>
+              <p>Do primeiro HTML à construção de aplicações completas: uma rota prática para evoluir até Full Stack e continuar se especializando.</p>
+            </header>
+
+            <ol class="learning-path__route" aria-label="Jornada visual de tecnologias e especializações" aria-describedby="learning-path-note">
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="HTML" aria-describedby="technology-html-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-html5.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-html5.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-html5.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>HTML</h3>
+                  <span class="technology-explanation" id="technology-html-description">Organiza tudo o que você vê em uma página.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="CSS" aria-describedby="technology-css-description" data-technology-trigger>
+                 
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-css3.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-css3.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-css3.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>CSS</h3>
+                  <span class="technology-explanation" id="technology-css-description">Dá cor, estilo e adapta a página a cada tela.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="JavaScript" aria-describedby="technology-javascript-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-javascript.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-javascript.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-javascript.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>JavaScript</h3>
+                  <span class="technology-explanation" id="technology-javascript-description">Faz botões, menus e páginas reagirem às suas ações.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="Git e GitHub" aria-describedby="technology-git-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-git.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-git.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-git.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>Git e GitHub</h3>
+                  <span class="technology-explanation" id="technology-git-description">Guarda seu progresso e facilita a criação em equipe.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="React" aria-describedby="technology-react-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-react.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-react.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-react.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>React</h3>
+                  <span class="technology-explanation" id="technology-react-description">Ajuda a montar telas modernas com partes reaproveitáveis.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="TypeScript" aria-describedby="technology-typescript-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-typescript.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-typescript.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-typescript.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>TypeScript</h3>
+                  <span class="technology-explanation" id="technology-typescript-description">Ajuda a encontrar erros cedo e traz mais segurança ao projeto.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="Node.js" aria-describedby="technology-node-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-nodejs.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-nodejs.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-nodejs.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>Node.js</h3>
+                  <span class="technology-explanation" id="technology-node-description">Faz funcionar o que acontece por trás da tela.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="Banco de Dados" aria-describedby="technology-database-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/database.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/database.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/database.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>Banco de Dados</h3>
+                  <span class="technology-explanation" id="technology-database-description">Guarda informações como cadastros, produtos e pedidos.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="Docker" aria-describedby="technology-docker-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/brand-docker.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/brand-docker.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/brand-docker.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>Docker</h3>
+                  <span class="technology-explanation" id="technology-docker-description">Ajuda o projeto a funcionar bem em diferentes computadores.</span>
+                </button>
+              </li>
+              <li class="learning-path__step learning-path__step--destination" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="Full Stack" aria-describedby="technology-fullstack-description" data-technology-trigger>
+                  
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/stack-2.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/stack-2.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/stack-2.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>Full Stack</h3>
+                  <span class="technology-explanation" id="technology-fullstack-description">Une tudo para criar uma aplicação completa, do início ao fim.</span>
+                </button>
+              </li>
+              <li class="learning-path__step" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="Pós-graduação" aria-describedby="technology-postgraduate-description" data-technology-trigger>
+                 
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/school.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/school.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/school.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>Pós-graduação</h3>
+                  <span class="technology-explanation" id="technology-postgraduate-description">Aprofunda seus conhecimentos para você continuar avançando.</span>
+                </button>
+              </li>
+              <li class="learning-path__step learning-path__step--destination" data-learning-step>
+                <button class="technology-trigger" type="button" aria-label="MBA em Tecnologia" aria-describedby="technology-mba-description" data-technology-trigger>
+                 
+                  <span class="technology-visual" aria-hidden="true">
+                    <span class="technology-object">
+                      <span class="technology-layer technology-layer--rear"><img src="assets/icons/learning-path/briefcase-2.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--middle"><img src="assets/icons/learning-path/briefcase-2.svg" alt="" width="24" height="24"></span>
+                      <span class="technology-layer technology-layer--front"><img src="assets/icons/learning-path/briefcase-2.svg" alt="" width="24" height="24"></span>
+                    </span>
+                  </span>
+                  <h3>MBA em Tecnologia</h3>
+                  <span class="technology-explanation" id="technology-mba-description">Mostra como tecnologia e negócios trabalham juntos nas decisões.</span>
+                </button>
+              </li>
+            </ol>
+
+            <p class="learning-path__note" id="learning-path-note">Tudo o que você precisa: acompanhamos você da primeira linha de código até o seu MBA.</p>
+          </div>
+        </section>
+
+        <section class="concept-testimonials" id="depoimentos" aria-labelledby="depoimentos-title" tabindex="-1" data-testimonials data-section-background-host>
+          <canvas class="concept-testimonials__canvas section-background__canvas" aria-hidden="true" data-section-background></canvas>
+          <div class="concept-testimonials__ambient" aria-hidden="true"></div>
+
+          <div class="container concept-testimonials__inner">
+            <header class="concept-testimonials__heading">
+              <p class="section-index">Relatos conceituais do desafio</p>
+              <h2 id="depoimentos-title">Quando você escreve o código, também decide o seu destino.</h2>
+              <p class="concept-testimonials__intro">Histórias de pessoas que começaram do zero e decidiram construir um novo caminho.</p>
+            </header>
+
+            <div class="concept-testimonials__stage" data-testimonial-stage aria-hidden="true">
+              <div class="testimonial-ribbons testimonial-ribbons--left" aria-hidden="true">
+                <div class="testimonial-ribbon testimonial-ribbon--down" data-testimonial-ribbon data-testimonial-group="0"></div>
+                <div class="testimonial-ribbon testimonial-ribbon--up" data-testimonial-ribbon data-testimonial-group="1"></div>
+              </div>
+
+              <div class="testimonial-feature-wrap">
+                <article class="testimonial-feature" data-testimonial-feature tabindex="0" aria-label="Relato conceitual em destaque">
+                  <div class="testimonial-feature__content" data-testimonial-content aria-live="polite" aria-atomic="true">
+                    <img class="testimonial-feature__avatar" src="assets/icons/avatar-conceptual.svg" alt="" width="88" height="88">
+                    <p class="testimonial-feature__name" data-testimonial-name>Marcos Vinícius</p>
+                    <p class="testimonial-feature__context" data-testimonial-context>Ex-eletricista</p>
+                    <blockquote class="testimonial-feature__quote"><p data-testimonial-quote>Saí da elétrica para meu primeiro emprego como dev. Entrei ganhando R$ 5K.</p></blockquote>
+                  </div>
+                </article>
+
+                <div class="testimonial-controls" aria-label="Controles do relato em destaque">
+                  <button class="testimonials-control" type="button" aria-label="Ver relato anterior" data-testimonial-previous>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"></path></svg>
+                  </button>
+                  <button class="testimonials-control" type="button" aria-label="Ver próximo relato" data-testimonial-next>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="testimonial-ribbons testimonial-ribbons--right" aria-hidden="true">
+                <div class="testimonial-ribbon testimonial-ribbon--down" data-testimonial-ribbon data-testimonial-group="2"></div>
+                <div class="testimonial-ribbon testimonial-ribbon--up" data-testimonial-ribbon data-testimonial-group="3"></div>
+              </div>
+            </div>
+
+            <ol class="concept-testimonials__fallback" aria-label="Lista de 32 relatos conceituais" data-testimonials-fallback>
+              <li data-testimonial-item data-name="Marcos Vinícius" data-context="Ex-eletricista"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Marcos Vinícius</h3><p>Ex-eletricista</p></div><blockquote><p>Saí da elétrica para meu primeiro emprego como dev. Entrei ganhando R$ 5K.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Ana Beatriz" data-context="Ex-caixa de supermercado"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Ana Beatriz</h3><p>Ex-caixa de supermercado</p></div><blockquote><p>Enviei meu novo portfólio e fui contratada em menos de um mês.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Lucas Almeida" data-context="Ex-assistente administrativo"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Lucas Almeida</h3><p>Ex-assistente administrativo</p></div><blockquote><p>Três meses depois do primeiro projeto, comecei a trabalhar para uma empresa de fora.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Jéssica Ramos" data-context="Designer autônoma"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Jéssica Ramos</h3><p>Designer autônoma</p></div><blockquote><p>Somei R$ 10K em freelas criando landing pages e automações.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Rafael Santos" data-context="Técnico de suporte"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Rafael Santos</h3><p>Técnico de suporte</p></div><blockquote><p>Meu primeiro projeto pago chegou antes de eu terminar a trilha.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Bruna Martins" data-context="Estudante"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Bruna Martins</h3><p>Estudante</p></div><blockquote><p>O portfólio que eu escondia virou o motivo da minha primeira entrevista.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Diego Oliveira" data-context="Motorista de aplicativo"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Diego Oliveira</h3><p>Motorista de aplicativo</p></div><blockquote><p>Eu achava que programação não era para mim. Hoje trabalho com front-end.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Camila Nunes" data-context="Auxiliar de enfermagem"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Camila Nunes</h3><p>Auxiliar de enfermagem</p></div><blockquote><p>Estudei à noite, construí meu portfólio e conquistei uma vaga júnior.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Guilherme Rocha" data-context="Técnico em manutenção"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Guilherme Rocha</h3><p>Técnico em manutenção</p></div><blockquote><p>Troquei ferramentas físicas por Node.js e APIs no meu primeiro emprego dev.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Larissa Souza" data-context="Vendedora"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Larissa Souza</h3><p>Vendedora</p></div><blockquote><p>Minha primeira landing page rendeu R$ 1,2K e uma nova indicação.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Pedro Henrique" data-context="Universitário"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Pedro Henrique</h3><p>Universitário</p></div><blockquote><p>Minha primeira API virou um freela e depois uma proposta de estágio.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Aline Costa" data-context="Recepcionista"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Aline Costa</h3><p>Recepcionista</p></div><blockquote><p>Foram muitos nãos. O primeiro sim veio depois que organizei meu portfólio.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="João Vitor" data-context="Ex-estoquista"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>João Vitor</h3><p>Ex-estoquista</p></div><blockquote><p>Em quatro meses fiz a transição e comecei como desenvolvedor júnior.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Mariana Lopes" data-context="Professora"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Mariana Lopes</h3><p>Professora</p></div><blockquote><p>Consegui meu primeiro trabalho remoto sem precisar sair da minha cidade.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Felipe Andrade" data-context="Social media"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Felipe Andrade</h3><p>Social media</p></div><blockquote><p>Juntei programação e marketing e criei uma nova fonte de renda.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Isabela Freitas" data-context="Empreendedora"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Isabela Freitas</h3><p>Empreendedora</p></div><blockquote><p>Fechei meu primeiro cliente 18 dias depois de publicar meu projeto.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Thiago Menezes" data-context="Operador de produção"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Thiago Menezes</h3><p>Operador de produção</p></div><blockquote><p>Minha renda dobrou depois que mudei para desenvolvimento.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Karina Ribeiro" data-context="Assistente administrativa"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Karina Ribeiro</h3><p>Assistente administrativa</p></div><blockquote><p>Comecei automatizando tarefas do trabalho e terminei no time de tecnologia.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Bruno Farias" data-context="Fotógrafo"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Bruno Farias</h3><p>Fotógrafo</p></div><blockquote><p>Criei sites para três negócios locais e transformei isso em portfólio.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Débora Lima" data-context="Estagiária"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Débora Lima</h3><p>Estagiária</p></div><blockquote><p>Meu primeiro aplicativo publicado me deu confiança para disputar vagas.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Matheus Cardoso" data-context="Freelancer"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Matheus Cardoso</h3><p>Freelancer</p></div><blockquote><p>React deixou de ser um mistério e virou minha primeira vaga de R$ 4,8K.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Vitória Alves" data-context="Estudante"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Vitória Alves</h3><p>Estudante</p></div><blockquote><p>Os freelas começaram pequenos e já somaram R$ 5K.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Eduardo Pires" data-context="Analista de suporte"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Eduardo Pires</h3><p>Analista de suporte</p></div><blockquote><p>Seis meses depois da transição, fechei um contrato remoto pagando em dólar.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Natália Gomes" data-context="Atendente"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Natália Gomes</h3><p>Atendente</p></div><blockquote><p>Em 30 dias consegui meu primeiro estágio na área.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="André Luiz" data-context="Mecânico"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>André Luiz</h3><p>Mecânico</p></div><blockquote><p>Saí do zero em lógica para meu primeiro trabalho com back-end.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Fernanda Castro" data-context="Arquiteta"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Fernanda Castro</h3><p>Arquiteta</p></div><blockquote><p>Vendi meu primeiro sistema Full Stack para um pequeno negócio.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Caio Barbosa" data-context="Entregador"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Caio Barbosa</h3><p>Entregador</p></div><blockquote><p>Entrei na área sem faculdade, mas com projetos que eu sabia explicar.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Milena Azevedo" data-context="Designer"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Milena Azevedo</h3><p>Designer</p></div><blockquote><p>Um mês de freelas em sites e interfaces passou de R$ 6K.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Gustavo Reis" data-context="Auxiliar de logística"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Gustavo Reis</h3><p>Auxiliar de logística</p></div><blockquote><p>Depois de ajustar LinkedIn e portfólio, marquei cinco entrevistas em uma semana.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Priscila Moreira" data-context="Suporte ao cliente"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Priscila Moreira</h3><p>Suporte ao cliente</p></div><blockquote><p>Automatizei processos internos e fui promovida para o time dev.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Renan Duarte" data-context="Técnico de redes"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Renan Duarte</h3><p>Técnico de redes</p></div><blockquote><p>Uma API em Node.js virou meu primeiro freela de R$ 2,5K.</p></blockquote></article></li>
+              <li data-testimonial-item data-name="Sofia Monteiro" data-context="Estudante"><article class="testimonial-static"><span class="testimonial-static__avatar" aria-hidden="true"></span><div><h3>Sofia Monteiro</h3><p>Estudante</p></div><blockquote><p>A comunidade me tirou de um bloqueio e me ajudou a conquistar meu primeiro sim.</p></blockquote></article></li>
+            </ol>
+            <p class="concept-testimonials__source-note">Conteúdo conceitual do desafio: nomes, contextos, valores e histórias são fictícios e não representam depoimentos ou resultados verificados do DevClub.</p>
+          </div>
+        </section>
+
+        <section class="instructors-showcase" id="feras-dev" aria-labelledby="feras-title" tabindex="-1" data-instructors data-section-background-host>
+          <canvas class="instructors-showcase__canvas section-background__canvas" aria-hidden="true" data-section-background></canvas>
+          <div class="instructors-showcase__ambient" aria-hidden="true"></div>
+
+          <div class="container instructors-showcase__inner">
+            <header class="instructors-showcase__heading">
+             
+              <h2 id="feras-title">Os Dev Feras!</h2>
+             </header>
+
+            <div class="instructors-carousel" role="region" aria-roledescription="carrossel" aria-label="Os Feras Dev" data-instructors-carousel>
+              <button class="instructors-control instructors-control--previous" type="button" aria-label="Ver instrutor anterior" data-instructor-previous>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"></path></svg>
+              </button>
+
+              <div class="instructors-stage" data-instructors-stage>
+                <ol class="instructors-list" data-instructors-list>
+                  <li class="instructor-item" data-instructor-item data-instructor-id="rodolfo">
+                    <article class="instructor-panel" data-instructor-trigger aria-labelledby="instructor-rodolfo-name">
+                      <figure class="instructor-hologram" aria-hidden="true">
+                        <span class="instructor-hologram__frame"></span>
+                        <img src="assets/images/instructors/rodolfo-mori.webp" alt="" width="960" height="1440" loading="lazy" decoding="async">
+                      </figure>
+                      <div class="instructor-summary">
+                        <h3 id="instructor-rodolfo-name">Rodolfo Mori</h3>
+                        <p>Fundador e mentor do DevClub</p>
+                      </div>
+                      <div class="instructor-details" id="instructor-rodolfo-description">
+                        <span class="instructor-badge instructor-badge--real">Pessoa real · fonte oficial</span>
+                        <h3>Rodolfo Mori</h3>
+                        <p class="instructor-details__role">Fundador e mentor do DevClub</p>
+                        <p class="instructor-details__skills">Carreira Full Stack · Mercado · Transição profissional</p>
+                        <p>De eletricista no Metrô de São Paulo a desenvolvedor e fundador do DevClub, Rodolfo criou o caminho que gostaria de ter encontrado quando começou na programação.</p>
+                        <p class="instructor-quote instructor-quote--editorial"><span>Mensagem editorial do desafio</span>O primeiro sim começa quando você decide não parar no primeiro não.</p>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="instructor-item" data-instructor-item data-instructor-id="lara">
+                    <article class="instructor-panel" data-instructor-trigger aria-labelledby="instructor-lara-name">
+                      <figure class="instructor-hologram" aria-hidden="true">
+                        <span class="instructor-hologram__frame"></span>
+                        <img src="assets/images/instructors/lara-nunes.webp" alt="" width="960" height="1440" loading="lazy" decoding="async">
+                      </figure>
+                      <div class="instructor-summary">
+                        <h3 id="instructor-lara-name">Lara Nunes</h3>
+                        <p>Fera do Front-end</p>
+                        <span>Personagem conceitual</span>
+                      </div>
+                      <div class="instructor-details" id="instructor-lara-description">
+                        <span class="instructor-badge">Personagem conceitual</span>
+                        <h3>Lara Nunes</h3>
+                        <p class="instructor-details__role">Fera do Front-end</p>
+                        <p class="instructor-details__skills">React · TypeScript · Design Systems</p>
+                        <p>Transforma componentes, estados e experiências complexas em interfaces claras, reutilizáveis e prontas para crescer.</p>
+                        <blockquote class="instructor-quote"><p>Interface boa não é só bonita: ela orienta, responde e escala.</p></blockquote>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="instructor-item" data-instructor-item data-instructor-id="davi">
+                    <article class="instructor-panel" data-instructor-trigger aria-labelledby="instructor-davi-name">
+                      <figure class="instructor-hologram" aria-hidden="true">
+                        <span class="instructor-hologram__frame"></span>
+                        <img src="assets/images/instructors/davi-rocha.webp" alt="" width="960" height="1440" loading="lazy" decoding="async">
+                      </figure>
+                      <div class="instructor-summary">
+                        <h3 id="instructor-davi-name">Davi Rocha</h3>
+                        <p>Fera do Back-end</p>
+                        <span>Personagem conceitual</span>
+                      </div>
+                      <div class="instructor-details" id="instructor-davi-description">
+                        <span class="instructor-badge">Personagem conceitual</span>
+                        <h3>Davi Rocha</h3>
+                        <p class="instructor-details__role">Fera do Back-end</p>
+                        <p class="instructor-details__skills">Node.js · APIs · Banco de Dados</p>
+                        <p>Mostra como a lógica, os dados e as integrações se conectam para sustentar aplicações de verdade.</p>
+                        <blockquote class="instructor-quote"><p>O usuário vê a tela. O back-end garante que tudo continue vivo.</p></blockquote>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="instructor-item" data-instructor-item data-instructor-id="camila">
+                    <article class="instructor-panel" data-instructor-trigger aria-labelledby="instructor-camila-name">
+                      <figure class="instructor-hologram" aria-hidden="true">
+                        <span class="instructor-hologram__frame"></span>
+                        <img src="assets/images/instructors/camila-torres.webp" alt="" width="960" height="1440" loading="lazy" decoding="async">
+                      </figure>
+                      <div class="instructor-summary">
+                        <h3 id="instructor-camila-name">Camila Torres</h3>
+                        <p>Fera dos Fundamentos</p>
+                        <span>Personagem conceitual</span>
+                      </div>
+                      <div class="instructor-details" id="instructor-camila-description">
+                        <span class="instructor-badge">Personagem conceitual</span>
+                        <h3>Camila Torres</h3>
+                        <p class="instructor-details__role">Fera dos Fundamentos</p>
+                        <p class="instructor-details__skills">HTML · CSS · JavaScript · Acessibilidade</p>
+                        <p>Ensina a construir bases sólidas, interfaces semânticas e experiências que funcionam para mais pessoas.</p>
+                        <blockquote class="instructor-quote"><p>Código avançado não salva uma base mal construída.</p></blockquote>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="instructor-item" data-instructor-item data-instructor-id="icaro">
+                    <article class="instructor-panel" data-instructor-trigger aria-labelledby="instructor-icaro-name">
+                      <figure class="instructor-hologram" aria-hidden="true">
+                        <span class="instructor-hologram__frame"></span>
+                        <img src="assets/images/instructors/icaro-martins.webp" alt="" width="960" height="1440" loading="lazy" decoding="async">
+                      </figure>
+                      <div class="instructor-summary">
+                        <h3 id="instructor-icaro-name">Ícaro Martins</h3>
+                        <p>Fera da Produção</p>
+                        <span>Personagem conceitual</span>
+                      </div>
+                      <div class="instructor-details" id="instructor-icaro-description">
+                        <span class="instructor-badge">Personagem conceitual</span>
+                        <h3>Ícaro Martins</h3>
+                        <p class="instructor-details__role">Fera da Produção</p>
+                        <p class="instructor-details__skills">Git · GitHub · Docker · Deploy</p>
+                        <p>Conecta desenvolvimento, versionamento e publicação para levar o projeto da máquina local até o mundo real.</p>
+                        <blockquote class="instructor-quote"><p>Projeto pronto é projeto versionado, testado e publicado.</p></blockquote>
+                      </div>
+                    </article>
+                  </li>
+                </ol>
+              </div>
+
+              <button class="instructors-control instructors-control--next" type="button" aria-label="Ver próximo instrutor" data-instructor-next>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+
+            <p class="sr-only" aria-live="polite" aria-atomic="true" data-instructors-status>Rodolfo Mori, 1 de 5</p>
+          </div>
+        </section>
+
+        <section class="results-showcase" id="resultados" aria-labelledby="resultados-title" tabindex="-1" data-results data-section-background-host>
+          <canvas class="results-showcase__canvas section-background__canvas" aria-hidden="true" data-section-background></canvas>
+          <div class="results-showcase__ambient" aria-hidden="true"></div>
+
+          <div class="container results-showcase__inner">
+            <header class="results-showcase__heading">
+              <p class="section-index">Projetos conceituais para praticar</p>
+              <h2 id="resultados-title">Aqui a teoria se torna realidade!</h2>
+              <p>Da primeira linha ao sistema completo, cada entrega transforma aprendizado em algo que você consegue apresentar, explicar e continuar melhorando.</p>
+              <p class="results-showcase__disclaimer"><strong>Composição conceitual:</strong> nomes, interfaces e descrições dos projetos são fictícios e não representam resultados verificados do DevClub.</p>
+              </header>
+
+            <div class="results-carousel" role="region" aria-roledescription="carrossel" aria-label="Projetos conceituais de resultado" data-results-carousel>
+              <button class="results-control results-control--previous" type="button" aria-label="Ver projeto anterior" data-result-previous>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"></path></svg>
+              </button>
+
+              <div class="results-stage" data-results-stage>
+                <ol class="results-list" data-results-list>
+                  <li class="result-item" data-result-item>
+                    <article class="result-panel" aria-labelledby="result-hub-title">
+                      <div class="result-visual result-visual--hub-central" aria-hidden="true">
+                        <img class="result-visual__image" src="assets/images/results/hub-central.webp" width="492" height="488" alt="" loading="lazy" decoding="async" draggable="false">
+                      </div>
+                      <div class="result-panel__copy">
+                        
+                        <h3 id="result-hub-title">HubCentral</h3>
+                        <p class="result-panel__lead">Uma central de produtividade para reunir tarefas, arquivos, calendário e metas em um só lugar.</p>
+                        <ul class="result-panel__tags" aria-label="Tecnologias demonstradas">
+                          <li>HTML</li><li>CSS</li><li>JavaScript</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="result-item" data-result-item>
+                    <article class="result-panel" aria-labelledby="result-devport-title">
+                      <div class="result-visual result-visual--dev-port" aria-hidden="true">
+                        <img class="result-visual__image" src="assets/images/results/dev-port.webp" width="475" height="487" alt="" loading="lazy" decoding="async" draggable="false">
+                      </div>
+                      <div class="result-panel__copy">
+                        
+                        <h3 id="result-devport-title">DevPort</h3>
+                        <p class="result-panel__lead">Um portfólio profissional para apresentar habilidades, projetos e a evolução de quem está começando na tecnologia.</p>
+                        <ul class="result-panel__tags" aria-label="Tecnologias demonstradas">
+                          <li>React</li><li>TypeScript</li><li>GitHub</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="result-item" data-result-item>
+                    <article class="result-panel" aria-labelledby="result-agenda-title">
+                      <div class="result-visual result-visual--agenda-zen" aria-hidden="true">
+                        <img class="result-visual__image" src="assets/images/results/agenda-zen.webp" width="505" height="488" alt="" loading="lazy" decoding="async" draggable="false">
+                      </div>
+                      <div class="result-panel__copy">
+                        
+                        <h3 id="result-agenda-title">AgendaZen</h3>
+                        <p class="result-panel__lead">Uma agenda inteligente para organizar compromissos e equilibrar a rotina sem complicação.</p>
+                        <ul class="result-panel__tags" aria-label="Tecnologias demonstradas">
+                          <li>JavaScript</li><li>API</li><li>Banco de Dados</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="result-item" data-result-item>
+                    <article class="result-panel" aria-labelledby="result-finansys-title">
+                      <div class="result-visual result-visual--finan-sys" aria-hidden="true">
+                        <img class="result-visual__image" src="assets/images/results/finan-sys.webp" width="486" height="488" alt="" loading="lazy" decoding="async" draggable="false">
+                      </div>
+                      <div class="result-panel__copy">
+                        
+                        <h3 id="result-finansys-title">FinanSys</h3>
+                        <p class="result-panel__lead">Um painel financeiro para acompanhar receitas, despesas e objetivos com clareza.</p>
+                        <ul class="result-panel__tags" aria-label="Tecnologias demonstradas">
+                          <li>Node.js</li><li>Banco de Dados</li><li>API</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="result-item" data-result-item>
+                    <article class="result-panel" aria-labelledby="result-vivalocal-title">
+                      <div class="result-visual result-visual--viva-local" aria-hidden="true">
+                        <img class="result-visual__image" src="assets/images/results/viva-local.webp" width="475" height="489" alt="" loading="lazy" decoding="async" draggable="false">
+                      </div>
+                      <div class="result-panel__copy">
+                        
+                        <h3 id="result-vivalocal-title">VivaLocal</h3>
+                        <p class="result-panel__lead">Um catálogo para aproximar pessoas, produtos e pequenos negócios da mesma região.</p>
+                        <ul class="result-panel__tags" aria-label="Tecnologias demonstradas">
+                          <li>React</li><li>TypeScript</li><li>GitHub</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+
+                  <li class="result-item" data-result-item>
+                    <article class="result-panel" aria-labelledby="result-aurora-title">
+                      <div class="result-visual result-visual--aurora-ai" aria-hidden="true">
+                        <img class="result-visual__image" src="assets/images/results/aurora-ai.webp" width="528" height="514" alt="" loading="lazy" decoding="async" draggable="false">
+                      </div>
+                      <div class="result-panel__copy">
+                        
+                        <h3 id="result-aurora-title">Aurora AI</h3>
+                        <p class="result-panel__lead">Uma assistente digital para organizar tarefas, compromissos e ideias em uma rotina mais simples.</p>
+                        <ul class="result-panel__tags" aria-label="Tecnologias demonstradas">
+                          <li>Full Stack</li><li>API</li><li>IA</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </li>
+                </ol>
+              </div>
+
+              <button class="results-control results-control--next" type="button" aria-label="Ver próximo projeto" data-result-next>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"></path></svg>
+              </button>
+            </div>
+
+            <p class="sr-only" aria-live="polite" aria-atomic="true" data-results-status>HubCentral, projeto 1 de 6</p>
+
+            <div class="results-companies" aria-labelledby="resultados-empresas-title" data-company-ticker>
+              <header class="results-companies__heading">
+                <span class="results-companies__badge">Empresas citadas pelo DevClub</span>
+                <h3 id="resultados-empresas-title">Empresas que contratam os nossos alunos</h3>
+              </header>
+
+              <div class="company-ticker" data-company-viewport>
+                <div class="company-ticker__track" data-company-motion-track>
+                  <ul class="company-wordmarks" data-company-source data-company-track>
+                    <li class="company-wordmark" data-company-item="rodobens">
+                      <span class="company-wordmark__visual" data-label="Rodobens">Rodobens</span>
+                    </li>
+                    <li class="company-wordmark" data-company-item="ifood">
+                      <span class="company-wordmark__visual" data-label="iFood">iFood</span>
+                    </li>
+                    <li class="company-wordmark" data-company-item="devclub">
+                      <span class="company-wordmark__visual" data-label="DevClub">DevClub</span>
+                    </li>
+                    <li class="company-wordmark" data-company-item="meta">
+                      <span class="company-wordmark__visual" data-label="Meta">Meta</span>
+                    </li>
+                    <li class="company-wordmark" data-company-item="apple">
+                      <span class="company-wordmark__visual" data-label="Apple">Apple</span>
+                    </li>
+                    <li class="company-wordmark" data-company-item="samsung">
+                      <span class="company-wordmark__visual" data-label="Samsung">Samsung</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <p class="results-companies__disclaimer">Os nomes aparecem no site oficial em uma lista de empresas que já contrataram alunos. Este letreiro é uma composição demonstrativa e não representa parceria, vínculo comercial ou endosso.</p>
+
+              </div>
+
+            <div class="results-showcase__cta">
+              <p>O que está esperando para codar o seu futuro?</p>
+              <a class="button" href="https://www.devclub.com.br/#courses">Ver formações oficiais</a>
+            </div>
+          </div>
+        </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer" id="rodape">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <a class="brand" href="#topo" aria-label="DevClub — voltar ao início">
+            <img class="brand__mark" src="assets/logos/devclub-symbol.png" alt="" width="62" height="62">
+            <span class="brand__name">DevClub</span>
+          </a>
+          <p>Projeto demonstrativo para desafio Full Stack.</p>
+        </div>
+
+        <div class="site-footer__social" aria-label="Redes sociais oficiais">
+          <p>Redes sociais</p>
+          <div class="site-footer__social-list">
+            <a class="social-link" href="https://www.instagram.com/devabordo" target="_blank" rel="noopener noreferrer" aria-label="Instagram oficial do DevClub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect>
+                <circle cx="12" cy="12" r="4"></circle>
+                <circle class="social-link__dot" cx="17.4" cy="6.8" r="1"></circle>
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.youtube.com/@DevClub-RodolfoMori" target="_blank" rel="noopener noreferrer" aria-label="YouTube oficial do DevClub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21 12c0 2.4-.3 4.3-.7 5.2-.3.7-.9 1.3-1.7 1.5-1.5.4-6.6.4-6.6.4s-5.1 0-6.6-.4a2.7 2.7 0 0 1-1.7-1.5C3.3 16.3 3 14.4 3 12s.3-4.3.7-5.2c.3-.7.9-1.3 1.7-1.5C6.9 4.9 12 4.9 12 4.9s5.1 0 6.6.4c.8.2 1.4.8 1.7 1.5.4.9.7 2.8.7 5.2Z"></path>
+                <path class="social-link__play" d="m10 9 5 3-5 3Z"></path>
+              </svg>
+            </a>
+            <a class="social-link" href="https://www.linkedin.com/school/devclub-com-br" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn oficial do DevClub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5.3 8.8v10.4M5.3 5.4v.1M10.2 19.2v-5.8c0-2.6 1.6-4.5 4.1-4.5 2.4 0 4.4 1.5 4.4 4.8v5.5M10.2 9.2v10"></path>
+              </svg>
+            </a>
+          </div>
+          <small>Contato fictício: <a href="mailto:contato@projeto-devclub.test">contato@projeto-devclub.test</a></small>
+        </div>
+
+        <a class="site-footer__back" href="#topo">Voltar ao início <span aria-hidden="true">↑</span></a>
+
+        <div class="site-footer__legal">
+          <p>© 2026 Projeto demonstrativo DevClub. Todos os direitos reservados ao projeto e aos respectivos titulares.</p>
+          <p>Esta página foi criada para um processo seletivo e combina recursos reais fornecidos ao projeto com conteúdos fictícios ou provisórios claramente sinalizados. Uso não comercial.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

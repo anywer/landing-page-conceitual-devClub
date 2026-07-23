@@ -1,0 +1,4 @@
+interface:
+  display_name: "DevClub Disruptive Landing Coach"
+  short_description: "Planeja, constrói e revisa a landing DevClub"
+  default_prompt: "Use $devclub-disruptive-landing-page-coach para analisar este projeto e priorizar a próxima etapa da landing page DevClub."
