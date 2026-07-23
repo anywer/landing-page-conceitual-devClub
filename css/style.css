@@ -2124,6 +2124,25 @@ button {
 }
 
 @media (max-width: 55.99rem) {
+  .hero h1 {
+    line-height: 1.04;
+  }
+
+  .hero h1 em {
+    letter-spacing: -0.035em;
+    line-height: 1.06;
+    vertical-align: baseline;
+  }
+
+  .about-section h2 {
+    line-height: 1.04;
+  }
+
+  .about-section h2 span:last-child {
+    letter-spacing: -0.035em;
+    line-height: 1.06;
+  }
+
   .brand__status {
     display: inline;
   }
@@ -2187,7 +2206,22 @@ button {
 
   .hero h1 {
     font-size: clamp(2.6rem, 12.5vw, 3rem);
-    line-height: 0.96;
+    letter-spacing: -0.025em;
+    line-height: 1.04;
+  }
+
+  .hero h1 em {
+    letter-spacing: 0.005em;
+  }
+
+  .about-section h2 {
+    letter-spacing: -0.025em;
+    line-height: 1.06;
+  }
+
+  .about-section h2 span:last-child {
+    letter-spacing: 0.005em;
+    line-height: 1.08;
   }
 
   .hero__lead,
@@ -2693,6 +2727,7 @@ button {
   color: rgba(243, 241, 236, 0.72);
   font-size: 0.74rem;
   line-height: 1.45;
+  line-clamp: 3;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
 }
@@ -3777,6 +3812,7 @@ button {
   }
 
   .testimonial-mini blockquote p {
+    line-clamp: 2;
     -webkit-line-clamp: 2;
   }
 
